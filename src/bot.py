@@ -44,7 +44,7 @@ async def new_order(interaction: discord.Interaction,
     embed.add_field(name="Note", value=note, inline=False)
     embed.set_image(url=product_photo_link)  # Set the image of the product
 
-    await interaction.response.send_message("KickzAE Client ->| > Placing Order", ephemeral=True)  # Ephemeral means only you can see the message
+    await interaction.response.send_message("KickzAE Client ->| Placing Order..", ephemeral=True)  # Ephemeral means only you can see the message
     await interaction.channel.send(embed=embed)  # Send the embed to the channel
 
 client.run(config["kickzae_client_token"])
